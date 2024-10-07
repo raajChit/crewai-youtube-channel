@@ -16,6 +16,7 @@ class VideoCreatorAgents(object):
                 f"You collect information for the mentioned topic that are valuable and interesting for "
                 f"making a YouTube Video, and assemble the collected information into an outline with key points. "
                 f"Your work will be passed on to Video Scriptwriter to write a video script on this topic."
+                f"The video should be one minute long"
             ),
             llm=self.agent_llm,
             verbose=True,
@@ -33,6 +34,7 @@ class VideoCreatorAgents(object):
                 f"You base your scriptwriting on the outline provided by Video Content Researcher, "
                 f"You acknowledge in your writing when your statements are opinions as opposed to objective statements."
                 f"Your work will be passed on to Video Scene Planner to plan the scenes for a video on this topic."
+                f"The video should be one minute long"
             ),
             llm=self.agent_llm,
             verbose=True,
@@ -50,6 +52,7 @@ class VideoCreatorAgents(object):
                 f"You base your scene-planning on the video script provided by Video Scriptwriter, "
                 f"Your video scene plan should include a detailed description of each scene in the video, "
                 f"the music or sound effect that should be used, and the sentence parts involved in this scene."
+                f"The video should be one minute long"
             ),
             llm=self.agent_llm,
             verbose=True,
@@ -69,6 +72,7 @@ class VideoCreatorAgents(object):
                 f"You are an expert in keyword research and gathering information about YouTube videos. "
                 f"You utilise the provided tool to identify the top 20 ranking YouTube videos on topic: {self.topic}, "
                 f"and extract their information as a reference for another agent."
+                f"The video should be one minute long"
             ),
             llm=self.agent_llm,
             verbose=True,
@@ -88,6 +92,7 @@ class VideoCreatorAgents(object):
                 f"you create attractive titles and descriptions for the new YouTube video that makes the video "
                 f"rank high in the YouTube search. You produce a video title and description that attract "
                 f"audience with high click-through rate. "
+                f"The video should be one minute long"
             ),
             llm=self.agent_llm,
             verbose=True,

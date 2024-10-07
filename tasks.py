@@ -122,11 +122,11 @@ class VideoCreatorTasks(object):
                 "- Visual: [key points on how should the scene look and sound like]\n"
                 "Your CSV file should follow the template provided below inside the triple backticks delimiter. "
                 "You should STRICTLY follow the template format INSIDE the triple backticks delimiter. "
-                "Do not include any extra words or symbols other than those required to fill up the template format.\n"
+                "IMPORTANT: DO NOT include any extra words or symbols other than those required to fill up the template format.\n"
                 "```\n"
                 '''"Scene Number","Audio","Visual"\n'''
                 '''"1","Artificial intelligence plays an important role in digital marketing.",'''
-                '''"- Intro clip\n- animated text display on digital marketing.\n- Drum roll sound effect"\n'''
+                '''"- Intro clip\n- animated text display on digital marketing.\n'''
                 '''"2",[sentence number 2],[scene 2 outline key points]\n'''
                 '''"3",[sentence number 3],[scene 3 outline key points]\n'''
                 "...\n"

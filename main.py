@@ -6,8 +6,16 @@ from tasks import VideoCreatorTasks
 from langchain_openai import ChatOpenAI
 from datetime import datetime
 from dotenv import load_dotenv
+import requests
 
 load_dotenv()
+
+def download_image(prompt):
+    url = f"https://pollinations.ai/p/{prompt}"
+    response = requests.get(url)
+    with open('generated_image.jpg', 'wb') as file:
+        file.write(response.content)
+    print('Image downloaded!')
 
 
 def main_run(topic):
